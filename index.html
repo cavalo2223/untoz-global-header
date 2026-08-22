@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untoz Global Header — Preview</title>
+  <link rel="stylesheet" href="src/untoz-global-header.css">
+  <style>
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f6f7fb; color: #101828; }
+    .demo { min-height: calc(100vh - 48px); display: grid; place-items: center; padding: 40px 20px; }
+    .demo-card { max-width: 720px; padding: 40px; border-radius: 24px; background: white; box-shadow: 0 20px 60px rgba(16,24,40,.08); }
+    .demo-card h1 { margin: 0 0 10px; letter-spacing: -.04em; }
+    .demo-card p { margin: 0; color: #667085; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div id="untoz-global-header"></div>
+  <main class="demo">
+    <section class="demo-card">
+      <h1>Untoz Global Header</h1>
+      <p>V1 preview — shared navigation component for the Untoz ecosystem.</p>
+    </section>
+  </main>
+
+  <script src="src/untoz-global-header.js"></script>
+  <script>
+    UntozGlobalHeader.render(document.getElementById('untoz-global-header'), {
+      site: 'untoz',
+      active: 'universe'
+    });
+  </script>
+</body>
+</html>
